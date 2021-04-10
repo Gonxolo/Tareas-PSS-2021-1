@@ -16,7 +16,7 @@ unsigned long long sumaVecs(unsigned long long vx, unsigned long long vy) {
     // printf("Aux2: %llx\n", aux2);
     // printf("Mask: %llx\n", mask);
 
-    total += (aux1+aux2)&mask;
+    total |= (aux1+aux2)&mask;
     // printf("Total: %llx\n", total);
     mask<<=8;
 
@@ -29,7 +29,7 @@ unsigned long long sumaVecs(unsigned long long vx, unsigned long long vy) {
     // printf("Aux2: %llx\n", aux2);
     // printf("Mask: %llx\n", mask);
 
-    total += (aux1+aux2)&mask;
+    total |= (aux1+aux2)&mask;
     // printf("Total: %llx\n", total);
 
     return total;
