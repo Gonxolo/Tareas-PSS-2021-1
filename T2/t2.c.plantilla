@@ -1,0 +1,11 @@
+#include <stdlib.h>
+
+#include "t2.h"
+
+int aislar_palabras(char *s) {
+  ...
+}
+
+char *palabras(char *s_orig) {
+  ...
+}
