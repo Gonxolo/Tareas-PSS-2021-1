@@ -1,0 +1,1 @@
+char *ultimaDireccionValida(char *ptr);

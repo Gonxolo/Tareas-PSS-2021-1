@@ -1,0 +1,715 @@
+==== run-O ====
+cc -O  -Wall -pedantic -std=c99    -c -o test-ultdir.o test-ultdir.c
+cc -O  -Wall -pedantic -std=c99    -c -o ultdir.o ultdir.c
+cc -O  -Wall -pedantic -std=c99    -c -o BigInt.o BigInt.c
+cc   test-ultdir.o ultdir.o BigInt.o  -pthread -o test-ultdir
+./test-ultdir
+Calculando factorial de 1000
+Numero de digitos hexadecimales = 2133
+Tiempo de calculo = 1 milisegundos
+Direccion de bigstr= 0x556f5e090260
+Ultima direccion valida = 0x556f5e0b0fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e0b1000
+-------------------------------------------
+Calculando factorial de 2000
+Numero de digitos hexadecimales = 4764
+Tiempo de calculo = 4 milisegundos
+Direccion de bigstr= 0x556f5e0a72c0
+Ultima direccion valida = 0x556f5e0b0fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e0b1000
+-------------------------------------------
+Calculando factorial de 3000
+Numero de digitos hexadecimales = 7583
+Tiempo de calculo = 5 milisegundos
+Direccion de bigstr= 0x556f5e0c1d20
+Ultima direccion valida = 0x556f5e0d1fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e0d2000
+-------------------------------------------
+Calculando factorial de 4000
+Numero de digitos hexadecimales = 10525
+Tiempo de calculo = 9 milisegundos
+Direccion de bigstr= 0x556f5e0e0c70
+Ultima direccion valida = 0x556f5e0f2fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e0f3000
+-------------------------------------------
+Calculando factorial de 5000
+Numero de digitos hexadecimales = 13559
+Tiempo de calculo = 16 milisegundos
+Direccion de bigstr= 0x556f5e11ec70
+Ultima direccion valida = 0x556f5e135fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e136000
+-------------------------------------------
+Calculando factorial de 6000
+Numero de digitos hexadecimales = 16664
+Tiempo de calculo = 22 milisegundos
+Direccion de bigstr= 0x556f5e1630e0
+Ultima direccion valida = 0x556f5e175fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e176000
+-------------------------------------------
+Calculando factorial de 7000
+Numero de digitos hexadecimales = 19831
+Tiempo de calculo = 39 milisegundos
+Direccion de bigstr= 0x556f5e1b4bc0
+Ultima direccion valida = 0x556f5e1bdfff
+Ultima direccion reportada por sbrk(0) = 0x556f5e1be000
+-------------------------------------------
+Calculando factorial de 8000
+Numero de digitos hexadecimales = 23049
+Tiempo de calculo = 38 milisegundos
+Direccion de bigstr= 0x556f5e20ebc0
+Ultima direccion valida = 0x556f5e21efff
+Ultima direccion reportada por sbrk(0) = 0x556f5e21f000
+-------------------------------------------
+Calculando factorial de 9000
+Numero de digitos hexadecimales = 26312
+Tiempo de calculo = 40 milisegundos
+Direccion de bigstr= 0x556f5e27da50
+Ultima direccion valida = 0x556f5e2a9fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e2aa000
+-------------------------------------------
+Calculando factorial de 10000
+Numero de digitos hexadecimales = 29615
+Tiempo de calculo = 40 milisegundos
+Direccion de bigstr= 0x556f5e2f3a40
+Ultima direccion valida = 0x556f5e306fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e307000
+-------------------------------------------
+Calculando factorial de 11000
+Numero de digitos hexadecimales = 32954
+Tiempo de calculo = 56 milisegundos
+Direccion de bigstr= 0x556f5e37e4d0
+Ultima direccion valida = 0x556f5e39afff
+Ultima direccion reportada por sbrk(0) = 0x556f5e39b000
+-------------------------------------------
+Calculando factorial de 12000
+Numero de digitos hexadecimales = 36327
+Tiempo de calculo = 66 milisegundos
+Direccion de bigstr= 0x556f5e40e890
+Ultima direccion valida = 0x556f5e42afff
+Ultima direccion reportada por sbrk(0) = 0x556f5e42b000
+-------------------------------------------
+Calculando factorial de 13000
+Numero de digitos hexadecimales = 39729
+Tiempo de calculo = 74 milisegundos
+Direccion de bigstr= 0x556f5e4b8310
+Ultima direccion valida = 0x556f5e4d8fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e4d9000
+-------------------------------------------
+Calculando factorial de 14000
+Numero de digitos hexadecimales = 43159
+Tiempo de calculo = 71 milisegundos
+Direccion de bigstr= 0x556f5e5620e0
+Ultima direccion valida = 0x556f5e582fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e583000
+-------------------------------------------
+Calculando factorial de 15000
+Numero de digitos hexadecimales = 46615
+Tiempo de calculo = 84 milisegundos
+Direccion de bigstr= 0x556f5e61f8e0
+Ultima direccion valida = 0x556f5e64efff
+Ultima direccion reportada por sbrk(0) = 0x556f5e64f000
+-------------------------------------------
+Calculando factorial de 16000
+Numero de digitos hexadecimales = 50095
+Tiempo de calculo = 89 milisegundos
+Direccion de bigstr= 0x556f5e6e4bc0
+Ultima direccion valida = 0x556f5e704fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e705000
+-------------------------------------------
+Calculando factorial de 17000
+Numero de digitos hexadecimales = 53597
+Tiempo de calculo = 102 milisegundos
+Direccion de bigstr= 0x556f5e7c3f90
+Ultima direccion valida = 0x556f5e7e3fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e7e4000
+-------------------------------------------
+Calculando factorial de 18000
+Numero de digitos hexadecimales = 57121
+Tiempo de calculo = 112 milisegundos
+Direccion de bigstr= 0x556f5e8aafc0
+Ultima direccion valida = 0x556f5e8cafff
+Ultima direccion reportada por sbrk(0) = 0x556f5e8cb000
+-------------------------------------------
+Calculando factorial de 19000
+Numero de digitos hexadecimales = 60665
+Tiempo de calculo = 151 milisegundos
+Direccion de bigstr= 0x556f5e99fd80
+Ultima direccion valida = 0x556f5e9d2fff
+Ultima direccion reportada por sbrk(0) = 0x556f5e9d3000
+-------------------------------------------
+Calculando factorial de 20000
+Numero de digitos hexadecimales = 64228
+Tiempo de calculo = 135 milisegundos
+Direccion de bigstr= 0x556f5eaa9ea0
+Ultima direccion valida = 0x556f5eae5fff
+Ultima direccion reportada por sbrk(0) = 0x556f5eae6000
+-------------------------------------------
+Calculando factorial de 21000
+Numero de digitos hexadecimales = 67809
+Tiempo de calculo = 147 milisegundos
+Direccion de bigstr= 0x556f5ebbe2e0
+Ultima direccion valida = 0x556f5ebdefff
+Ultima direccion reportada por sbrk(0) = 0x556f5ebdf000
+-------------------------------------------
+Calculando factorial de 22000
+Numero de digitos hexadecimales = 71406
+Tiempo de calculo = 219 milisegundos
+Direccion de bigstr= 0x556f5eccc190
+Ultima direccion valida = 0x556f5ed01fff
+Ultima direccion reportada por sbrk(0) = 0x556f5ed02000
+-------------------------------------------
+Calculando factorial de 23000
+Numero de digitos hexadecimales = 75021
+Tiempo de calculo = 183 milisegundos
+Direccion de bigstr= 0x556f5edf3fa0
+Ultima direccion valida = 0x556f5ee2afff
+Ultima direccion reportada por sbrk(0) = 0x556f5ee2b000
+-------------------------------------------
+Calculando factorial de 24000
+Numero de digitos hexadecimales = 78651
+Tiempo de calculo = 207 milisegundos
+Direccion de bigstr= 0x556f5ef3bd10
+Ultima direccion valida = 0x556f5ef5bfff
+Ultima direccion reportada por sbrk(0) = 0x556f5ef5c000
+-------------------------------------------
+Calculando factorial de 25000
+Numero de digitos hexadecimales = 82296
+Tiempo de calculo = 208 milisegundos
+Direccion de bigstr= 0x556f5f0801a0
+Ultima direccion valida = 0x556f5f0a0fff
+Ultima direccion reportada por sbrk(0) = 0x556f5f0a1000
+-------------------------------------------
+Calculando factorial de 26000
+Numero de digitos hexadecimales = 85956
+Tiempo de calculo = 239 milisegundos
+Direccion de bigstr= 0x556f5f1c3720
+Ultima direccion valida = 0x556f5f1fcfff
+Ultima direccion reportada por sbrk(0) = 0x556f5f1fd000
+-------------------------------------------
+Calculando factorial de 27000
+Numero de digitos hexadecimales = 89629
+Tiempo de calculo = 222 milisegundos
+Direccion de bigstr= 0x556f5f336fd0
+Ultima direccion valida = 0x556f5f371fff
+Ultima direccion reportada por sbrk(0) = 0x556f5f372000
+-------------------------------------------
+Calculando factorial de 28000
+Numero de digitos hexadecimales = 93316
+Tiempo de calculo = 277 milisegundos
+Direccion de bigstr= 0x556f5f4a4d80
+Ultima direccion valida = 0x556f5f4c4fff
+Ultima direccion reportada por sbrk(0) = 0x556f5f4c5000
+-------------------------------------------
+Calculando factorial de 29000
+Numero de digitos hexadecimales = 97015
+Tiempo de calculo = 247 milisegundos
+Direccion de bigstr= 0x556f5f615270
+Ultima direccion valida = 0x556f5f651fff
+Ultima direccion reportada por sbrk(0) = 0x556f5f652000
+-------------------------------------------
+Calculando factorial de 30000
+Numero de digitos hexadecimales = 100728
+Tiempo de calculo = 297 milisegundos
+Direccion de bigstr= 0x556f5f7a9b30
+Ultima direccion valida = 0x556f5f7e7fff
+Ultima direccion reportada por sbrk(0) = 0x556f5f7e8000
+-------------------------------------------
+Calculando factorial de 31000
+Numero de digitos hexadecimales = 104452
+Tiempo de calculo = 318 milisegundos
+Direccion de bigstr= 0x556f5f9532a0
+Ultima direccion valida = 0x556f5f973fff
+Ultima direccion reportada por sbrk(0) = 0x556f5f974000
+-------------------------------------------
+Calculando factorial de 32000
+Numero de digitos hexadecimales = 108187
+Tiempo de calculo = 400 milisegundos
+Direccion de bigstr= 0x556f5faf9d60
+Ultima direccion valida = 0x556f5fb39fff
+Ultima direccion reportada por sbrk(0) = 0x556f5fb3a000
+-------------------------------------------
+Calculando factorial de 33000
+Numero de digitos hexadecimales = 111934
+Tiempo de calculo = 318 milisegundos
+Direccion de bigstr= 0x556f5fc9bea0
+Ultima direccion valida = 0x556f5fce9fff
+Ultima direccion reportada por sbrk(0) = 0x556f5fcea000
+-------------------------------------------
+Calculando factorial de 34000
+Numero de digitos hexadecimales = 115692
+Tiempo de calculo = 327 milisegundos
+Direccion de bigstr= 0x556f5fe59880
+Ultima direccion valida = 0x556f5fe9afff
+Ultima direccion reportada por sbrk(0) = 0x556f5fe9b000
+-------------------------------------------
+Calculando factorial de 35000
+Numero de digitos hexadecimales = 119461
+Tiempo de calculo = 336 milisegundos
+Direccion de bigstr= 0x556f60033ac0
+Ultima direccion valida = 0x556f60075fff
+Ultima direccion reportada por sbrk(0) = 0x556f60076000
+-------------------------------------------
+Calculando factorial de 36000
+Numero de digitos hexadecimales = 123240
+Tiempo de calculo = 411 milisegundos
+Direccion de bigstr= 0x556f60212be0
+Ultima direccion valida = 0x556f60255fff
+Ultima direccion reportada por sbrk(0) = 0x556f60256000
+-------------------------------------------
+Calculando factorial de 37000
+Numero de digitos hexadecimales = 127029
+Tiempo de calculo = 410 milisegundos
+Direccion de bigstr= 0x556f604002e0
+Ultima direccion valida = 0x556f60444fff
+Ultima direccion reportada por sbrk(0) = 0x556f60445000
+-------------------------------------------
+Calculando factorial de 38000
+Numero de digitos hexadecimales = 130827
+Tiempo de calculo = 491 milisegundos
+Direccion de bigstr= 0x556f605fe840
+Ultima direccion valida = 0x556f60643fff
+Ultima direccion reportada por sbrk(0) = 0x556f60644000
+-------------------------------------------
+Calculando factorial de 39000
+Numero de digitos hexadecimales = 134636
+Tiempo de calculo = 540 milisegundos
+Direccion de bigstr= 0x556f6082e1a0
+Ultima direccion valida = 0x556f6086efff
+Ultima direccion reportada por sbrk(0) = 0x556f6086f000
+-------------------------------------------
+Calculando factorial de 40000
+Numero de digitos hexadecimales = 138453
+Tiempo de calculo = 493 milisegundos
+Direccion de bigstr= 0x556f60a35f30
+Ultima direccion valida = 0x556f60a77fff
+Ultima direccion reportada por sbrk(0) = 0x556f60a78000
+-------------------------------------------
+Calculando factorial de 41000
+Numero de digitos hexadecimales = 142279
+Tiempo de calculo = 547 milisegundos
+Direccion de bigstr= 0x556f60c67090
+Ultima direccion valida = 0x556f60ca9fff
+Ultima direccion reportada por sbrk(0) = 0x556f60caa000
+-------------------------------------------
+Calculando factorial de 42000
+Numero de digitos hexadecimales = 146115
+Tiempo de calculo = 545 milisegundos
+Direccion de bigstr= 0x556f60e9c150
+Ultima direccion valida = 0x556f60edffff
+Ultima direccion reportada por sbrk(0) = 0x556f60ee0000
+-------------------------------------------
+Calculando factorial de 43000
+Numero de digitos hexadecimales = 149958
+Tiempo de calculo = 544 milisegundos
+Direccion de bigstr= 0x556f610ea440
+Ultima direccion valida = 0x556f61134fff
+Ultima direccion reportada por sbrk(0) = 0x556f61135000
+-------------------------------------------
+Calculando factorial de 44000
+Numero de digitos hexadecimales = 153810
+Tiempo de calculo = 564 milisegundos
+Direccion de bigstr= 0x556f61328f40
+Ultima direccion valida = 0x556f61373fff
+Ultima direccion reportada por sbrk(0) = 0x556f61374000
+-------------------------------------------
+Calculando factorial de 45000
+Numero de digitos hexadecimales = 157671
+Tiempo de calculo = 589 milisegundos
+Direccion de bigstr= 0x556f61588910
+Ultima direccion valida = 0x556f615fbfff
+Ultima direccion reportada por sbrk(0) = 0x556f615fc000
+-------------------------------------------
+Calculando factorial de 46000
+Numero de digitos hexadecimales = 161539
+Tiempo de calculo = 591 milisegundos
+Direccion de bigstr= 0x556f6180faa0
+Ultima direccion valida = 0x556f6185cfff
+Ultima direccion reportada por sbrk(0) = 0x556f6185d000
+-------------------------------------------
+Calculando factorial de 47000
+Numero de digitos hexadecimales = 165415
+Tiempo de calculo = 647 milisegundos
+Direccion de bigstr= 0x556f61a8c8d0
+Ultima direccion valida = 0x556f61adafff
+Ultima direccion reportada por sbrk(0) = 0x556f61adb000
+-------------------------------------------
+Calculando factorial de 48000
+Numero de digitos hexadecimales = 169299
+Tiempo de calculo = 621 milisegundos
+Direccion de bigstr= 0x556f61d17bc0
+Ultima direccion valida = 0x556f61d66fff
+Ultima direccion reportada por sbrk(0) = 0x556f61d67000
+-------------------------------------------
+Calculando factorial de 49000
+Numero de digitos hexadecimales = 173191
+Tiempo de calculo = 643 milisegundos
+Direccion de bigstr= 0x556f61f91270
+Ultima direccion valida = 0x556f61fe1fff
+Ultima direccion reportada por sbrk(0) = 0x556f61fe2000
+-------------------------------------------
+Calculando factorial de 50000
+Numero de digitos hexadecimales = 177090
+Tiempo de calculo = 676 milisegundos
+Direccion de bigstr= 0x556f62253e00
+Ultima direccion valida = 0x556f622a4fff
+Ultima direccion reportada por sbrk(0) = 0x556f622a5000
+-------------------------------------------
+Felicitaciones: aprobo este modo de ejecucion
+==== run-g ====
+cc -g  -Wall -pedantic -std=c99    -c -o test-ultdir.o test-ultdir.c
+cc -g  -Wall -pedantic -std=c99    -c -o ultdir.o ultdir.c
+cc -g  -Wall -pedantic -std=c99    -c -o BigInt.o BigInt.c
+cc -g  test-ultdir.o ultdir.o BigInt.o  -pthread -o test-ultdir
+./test-ultdir
+Calculando factorial de 1000
+Numero de digitos hexadecimales = 2133
+Tiempo de calculo = 2 milisegundos
+Direccion de bigstr= 0x5607d874d260
+Ultima direccion valida = 0x5607d876dfff
+Ultima direccion reportada por sbrk(0) = 0x5607d876e000
+-------------------------------------------
+Calculando factorial de 2000
+Numero de digitos hexadecimales = 4764
+Tiempo de calculo = 6 milisegundos
+Direccion de bigstr= 0x5607d87642c0
+Ultima direccion valida = 0x5607d876dfff
+Ultima direccion reportada por sbrk(0) = 0x5607d876e000
+-------------------------------------------
+Calculando factorial de 3000
+Numero de digitos hexadecimales = 7583
+Tiempo de calculo = 10 milisegundos
+Direccion de bigstr= 0x5607d877ed20
+Ultima direccion valida = 0x5607d878efff
+Ultima direccion reportada por sbrk(0) = 0x5607d878f000
+-------------------------------------------
+Calculando factorial de 4000
+Numero de digitos hexadecimales = 10525
+Tiempo de calculo = 17 milisegundos
+Direccion de bigstr= 0x5607d879dc70
+Ultima direccion valida = 0x5607d87affff
+Ultima direccion reportada por sbrk(0) = 0x5607d87b0000
+-------------------------------------------
+Calculando factorial de 5000
+Numero de digitos hexadecimales = 13559
+Tiempo de calculo = 44 milisegundos
+Direccion de bigstr= 0x5607d87dbc70
+Ultima direccion valida = 0x5607d87f2fff
+Ultima direccion reportada por sbrk(0) = 0x5607d87f3000
+-------------------------------------------
+Calculando factorial de 6000
+Numero de digitos hexadecimales = 16664
+Tiempo de calculo = 43 milisegundos
+Direccion de bigstr= 0x5607d88200e0
+Ultima direccion valida = 0x5607d8832fff
+Ultima direccion reportada por sbrk(0) = 0x5607d8833000
+-------------------------------------------
+Calculando factorial de 7000
+Numero de digitos hexadecimales = 19831
+Tiempo de calculo = 48 milisegundos
+Direccion de bigstr= 0x5607d8871bc0
+Ultima direccion valida = 0x5607d887afff
+Ultima direccion reportada por sbrk(0) = 0x5607d887b000
+-------------------------------------------
+Calculando factorial de 8000
+Numero de digitos hexadecimales = 23049
+Tiempo de calculo = 51 milisegundos
+Direccion de bigstr= 0x5607d88cbbc0
+Ultima direccion valida = 0x5607d88dbfff
+Ultima direccion reportada por sbrk(0) = 0x5607d88dc000
+-------------------------------------------
+Calculando factorial de 9000
+Numero de digitos hexadecimales = 26312
+Tiempo de calculo = 61 milisegundos
+Direccion de bigstr= 0x5607d893aa50
+Ultima direccion valida = 0x5607d8966fff
+Ultima direccion reportada por sbrk(0) = 0x5607d8967000
+-------------------------------------------
+Calculando factorial de 10000
+Numero de digitos hexadecimales = 29615
+Tiempo de calculo = 106 milisegundos
+Direccion de bigstr= 0x5607d89b0a40
+Ultima direccion valida = 0x5607d89c3fff
+Ultima direccion reportada por sbrk(0) = 0x5607d89c4000
+-------------------------------------------
+Calculando factorial de 11000
+Numero de digitos hexadecimales = 32954
+Tiempo de calculo = 101 milisegundos
+Direccion de bigstr= 0x5607d8a3b4d0
+Ultima direccion valida = 0x5607d8a57fff
+Ultima direccion reportada por sbrk(0) = 0x5607d8a58000
+-------------------------------------------
+Calculando factorial de 12000
+Numero de digitos hexadecimales = 36327
+Tiempo de calculo = 122 milisegundos
+Direccion de bigstr= 0x5607d8acb890
+Ultima direccion valida = 0x5607d8ae7fff
+Ultima direccion reportada por sbrk(0) = 0x5607d8ae8000
+-------------------------------------------
+Calculando factorial de 13000
+Numero de digitos hexadecimales = 39729
+Tiempo de calculo = 120 milisegundos
+Direccion de bigstr= 0x5607d8b75310
+Ultima direccion valida = 0x5607d8b95fff
+Ultima direccion reportada por sbrk(0) = 0x5607d8b96000
+-------------------------------------------
+Calculando factorial de 14000
+Numero de digitos hexadecimales = 43159
+Tiempo de calculo = 158 milisegundos
+Direccion de bigstr= 0x5607d8c1f0e0
+Ultima direccion valida = 0x5607d8c3ffff
+Ultima direccion reportada por sbrk(0) = 0x5607d8c40000
+-------------------------------------------
+Calculando factorial de 15000
+Numero de digitos hexadecimales = 46615
+Tiempo de calculo = 162 milisegundos
+Direccion de bigstr= 0x5607d8cdc8e0
+Ultima direccion valida = 0x5607d8d0bfff
+Ultima direccion reportada por sbrk(0) = 0x5607d8d0c000
+-------------------------------------------
+Calculando factorial de 16000
+Numero de digitos hexadecimales = 50095
+Tiempo de calculo = 174 milisegundos
+Direccion de bigstr= 0x5607d8da1bc0
+Ultima direccion valida = 0x5607d8dc1fff
+Ultima direccion reportada por sbrk(0) = 0x5607d8dc2000
+-------------------------------------------
+Calculando factorial de 17000
+Numero de digitos hexadecimales = 53597
+Tiempo de calculo = 219 milisegundos
+Direccion de bigstr= 0x5607d8e80f90
+Ultima direccion valida = 0x5607d8ea0fff
+Ultima direccion reportada por sbrk(0) = 0x5607d8ea1000
+-------------------------------------------
+Calculando factorial de 18000
+Numero de digitos hexadecimales = 57121
+Tiempo de calculo = 216 milisegundos
+Direccion de bigstr= 0x5607d8f67fc0
+Ultima direccion valida = 0x5607d8f87fff
+Ultima direccion reportada por sbrk(0) = 0x5607d8f88000
+-------------------------------------------
+Calculando factorial de 19000
+Numero de digitos hexadecimales = 60665
+Tiempo de calculo = 238 milisegundos
+Direccion de bigstr= 0x5607d905cd80
+Ultima direccion valida = 0x5607d908ffff
+Ultima direccion reportada por sbrk(0) = 0x5607d9090000
+-------------------------------------------
+Calculando factorial de 20000
+Numero de digitos hexadecimales = 64228
+Tiempo de calculo = 306 milisegundos
+Direccion de bigstr= 0x5607d9166ea0
+Ultima direccion valida = 0x5607d91a2fff
+Ultima direccion reportada por sbrk(0) = 0x5607d91a3000
+-------------------------------------------
+Calculando factorial de 21000
+Numero de digitos hexadecimales = 67809
+Tiempo de calculo = 312 milisegundos
+Direccion de bigstr= 0x5607d927b2e0
+Ultima direccion valida = 0x5607d929bfff
+Ultima direccion reportada por sbrk(0) = 0x5607d929c000
+-------------------------------------------
+Calculando factorial de 22000
+Numero de digitos hexadecimales = 71406
+Tiempo de calculo = 355 milisegundos
+Direccion de bigstr= 0x5607d9389190
+Ultima direccion valida = 0x5607d93befff
+Ultima direccion reportada por sbrk(0) = 0x5607d93bf000
+-------------------------------------------
+Calculando factorial de 23000
+Numero de digitos hexadecimales = 75021
+Tiempo de calculo = 363 milisegundos
+Direccion de bigstr= 0x5607d94b0fa0
+Ultima direccion valida = 0x5607d94e7fff
+Ultima direccion reportada por sbrk(0) = 0x5607d94e8000
+-------------------------------------------
+Calculando factorial de 24000
+Numero de digitos hexadecimales = 78651
+Tiempo de calculo = 377 milisegundos
+Direccion de bigstr= 0x5607d95f8d10
+Ultima direccion valida = 0x5607d9618fff
+Ultima direccion reportada por sbrk(0) = 0x5607d9619000
+-------------------------------------------
+Calculando factorial de 25000
+Numero de digitos hexadecimales = 82296
+Tiempo de calculo = 403 milisegundos
+Direccion de bigstr= 0x5607d973d1a0
+Ultima direccion valida = 0x5607d975dfff
+Ultima direccion reportada por sbrk(0) = 0x5607d975e000
+-------------------------------------------
+Calculando factorial de 26000
+Numero de digitos hexadecimales = 85956
+Tiempo de calculo = 444 milisegundos
+Direccion de bigstr= 0x5607d9880720
+Ultima direccion valida = 0x5607d98b9fff
+Ultima direccion reportada por sbrk(0) = 0x5607d98ba000
+-------------------------------------------
+Calculando factorial de 27000
+Numero de digitos hexadecimales = 89629
+Tiempo de calculo = 462 milisegundos
+Direccion de bigstr= 0x5607d99f3fd0
+Ultima direccion valida = 0x5607d9a2efff
+Ultima direccion reportada por sbrk(0) = 0x5607d9a2f000
+-------------------------------------------
+Calculando factorial de 28000
+Numero de digitos hexadecimales = 93316
+Tiempo de calculo = 499 milisegundos
+Direccion de bigstr= 0x5607d9b61d80
+Ultima direccion valida = 0x5607d9b81fff
+Ultima direccion reportada por sbrk(0) = 0x5607d9b82000
+-------------------------------------------
+Calculando factorial de 29000
+Numero de digitos hexadecimales = 97015
+Tiempo de calculo = 563 milisegundos
+Direccion de bigstr= 0x5607d9cd2270
+Ultima direccion valida = 0x5607d9d0efff
+Ultima direccion reportada por sbrk(0) = 0x5607d9d0f000
+-------------------------------------------
+Calculando factorial de 30000
+Numero de digitos hexadecimales = 100728
+Tiempo de calculo = 593 milisegundos
+Direccion de bigstr= 0x5607d9e66b30
+Ultima direccion valida = 0x5607d9ea4fff
+Ultima direccion reportada por sbrk(0) = 0x5607d9ea5000
+-------------------------------------------
+Calculando factorial de 31000
+Numero de digitos hexadecimales = 104452
+Tiempo de calculo = 626 milisegundos
+Direccion de bigstr= 0x5607da0102a0
+Ultima direccion valida = 0x5607da030fff
+Ultima direccion reportada por sbrk(0) = 0x5607da031000
+-------------------------------------------
+Calculando factorial de 32000
+Numero de digitos hexadecimales = 108187
+Tiempo de calculo = 622 milisegundos
+Direccion de bigstr= 0x5607da1b6d60
+Ultima direccion valida = 0x5607da1f6fff
+Ultima direccion reportada por sbrk(0) = 0x5607da1f7000
+-------------------------------------------
+Calculando factorial de 33000
+Numero de digitos hexadecimales = 111934
+Tiempo de calculo = 677 milisegundos
+Direccion de bigstr= 0x5607da358ea0
+Ultima direccion valida = 0x5607da3a6fff
+Ultima direccion reportada por sbrk(0) = 0x5607da3a7000
+-------------------------------------------
+Calculando factorial de 34000
+Numero de digitos hexadecimales = 115692
+Tiempo de calculo = 710 milisegundos
+Direccion de bigstr= 0x5607da516880
+Ultima direccion valida = 0x5607da557fff
+Ultima direccion reportada por sbrk(0) = 0x5607da558000
+-------------------------------------------
+Calculando factorial de 35000
+Numero de digitos hexadecimales = 119461
+Tiempo de calculo = 798 milisegundos
+Direccion de bigstr= 0x5607da6f0ac0
+Ultima direccion valida = 0x5607da732fff
+Ultima direccion reportada por sbrk(0) = 0x5607da733000
+-------------------------------------------
+Calculando factorial de 36000
+Numero de digitos hexadecimales = 123240
+Tiempo de calculo = 772 milisegundos
+Direccion de bigstr= 0x5607da8cfbe0
+Ultima direccion valida = 0x5607da912fff
+Ultima direccion reportada por sbrk(0) = 0x5607da913000
+-------------------------------------------
+Calculando factorial de 37000
+Numero de digitos hexadecimales = 127029
+Tiempo de calculo = 870 milisegundos
+Direccion de bigstr= 0x5607daabd2e0
+Ultima direccion valida = 0x5607dab01fff
+Ultima direccion reportada por sbrk(0) = 0x5607dab02000
+-------------------------------------------
+Calculando factorial de 38000
+Numero de digitos hexadecimales = 130827
+Tiempo de calculo = 884 milisegundos
+Direccion de bigstr= 0x5607dacbb840
+Ultima direccion valida = 0x5607dad00fff
+Ultima direccion reportada por sbrk(0) = 0x5607dad01000
+-------------------------------------------
+Calculando factorial de 39000
+Numero de digitos hexadecimales = 134636
+Tiempo de calculo = 948 milisegundos
+Direccion de bigstr= 0x5607daeeb1a0
+Ultima direccion valida = 0x5607daf2bfff
+Ultima direccion reportada por sbrk(0) = 0x5607daf2c000
+-------------------------------------------
+Calculando factorial de 40000
+Numero de digitos hexadecimales = 138453
+Tiempo de calculo = 1128 milisegundos
+Direccion de bigstr= 0x5607db0f2f30
+Ultima direccion valida = 0x5607db134fff
+Ultima direccion reportada por sbrk(0) = 0x5607db135000
+-------------------------------------------
+Calculando factorial de 41000
+Numero de digitos hexadecimales = 142279
+Tiempo de calculo = 993 milisegundos
+Direccion de bigstr= 0x5607db324090
+Ultima direccion valida = 0x5607db366fff
+Ultima direccion reportada por sbrk(0) = 0x5607db367000
+-------------------------------------------
+Calculando factorial de 42000
+Numero de digitos hexadecimales = 146115
+Tiempo de calculo = 1055 milisegundos
+Direccion de bigstr= 0x5607db559150
+Ultima direccion valida = 0x5607db59cfff
+Ultima direccion reportada por sbrk(0) = 0x5607db59d000
+-------------------------------------------
+Calculando factorial de 43000
+Numero de digitos hexadecimales = 149958
+Tiempo de calculo = 1087 milisegundos
+Direccion de bigstr= 0x5607db7a7440
+Ultima direccion valida = 0x5607db7f1fff
+Ultima direccion reportada por sbrk(0) = 0x5607db7f2000
+-------------------------------------------
+Calculando factorial de 44000
+Numero de digitos hexadecimales = 153810
+Tiempo de calculo = 1115 milisegundos
+Direccion de bigstr= 0x5607db9e5f40
+Ultima direccion valida = 0x5607dba30fff
+Ultima direccion reportada por sbrk(0) = 0x5607dba31000
+-------------------------------------------
+Calculando factorial de 45000
+Numero de digitos hexadecimales = 157671
+Tiempo de calculo = 1248 milisegundos
+Direccion de bigstr= 0x5607dbc45910
+Ultima direccion valida = 0x5607dbcb8fff
+Ultima direccion reportada por sbrk(0) = 0x5607dbcb9000
+-------------------------------------------
+Calculando factorial de 46000
+Numero de digitos hexadecimales = 161539
+Tiempo de calculo = 1478 milisegundos
+Direccion de bigstr= 0x5607dbeccaa0
+Ultima direccion valida = 0x5607dbf19fff
+Ultima direccion reportada por sbrk(0) = 0x5607dbf1a000
+-------------------------------------------
+Calculando factorial de 47000
+Numero de digitos hexadecimales = 165415
+Tiempo de calculo = 1263 milisegundos
+Direccion de bigstr= 0x5607dc1498d0
+Ultima direccion valida = 0x5607dc197fff
+Ultima direccion reportada por sbrk(0) = 0x5607dc198000
+-------------------------------------------
+Calculando factorial de 48000
+Numero de digitos hexadecimales = 169299
+Tiempo de calculo = 1357 milisegundos
+Direccion de bigstr= 0x5607dc3d4bc0
+Ultima direccion valida = 0x5607dc423fff
+Ultima direccion reportada por sbrk(0) = 0x5607dc424000
+-------------------------------------------
+Calculando factorial de 49000
+Numero de digitos hexadecimales = 173191
+Tiempo de calculo = 1594 milisegundos
+Direccion de bigstr= 0x5607dc64e270
+Ultima direccion valida = 0x5607dc69efff
+Ultima direccion reportada por sbrk(0) = 0x5607dc69f000
+-------------------------------------------
+Calculando factorial de 50000
+Numero de digitos hexadecimales = 177090
+Tiempo de calculo = 1518 milisegundos
+Direccion de bigstr= 0x5607dc910e00
+Ultima direccion valida = 0x5607dc961fff
+Ultima direccion reportada por sbrk(0) = 0x5607dc962000
+-------------------------------------------
+Felicitaciones: aprobo este modo de ejecucion
+==== zip ====

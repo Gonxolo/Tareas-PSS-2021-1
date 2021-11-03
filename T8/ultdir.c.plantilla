@@ -1,0 +1,14 @@
+#define _POSIX_C_SOURCE 1
+#include <sys/types.h>
+#include <setjmp.h>
+#include <signal.h>
+
+#include "ultdir.h"
+
+typedef void (*sighandler_t)();
+
+...
+
+char *ultimaDireccionValida(char *q) {
+  ...
+}
