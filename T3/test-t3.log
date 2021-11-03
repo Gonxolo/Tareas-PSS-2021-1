@@ -1,0 +1,61 @@
+==1200== Memcheck, a memory error detector
+==1200== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1200== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==1200== Command: ./test-t3
+==1200== 
+=====================================
+Tests de la funcion eliminar_primeros
+=====================================
+
+Caso arbol nulo: debe continuar vacio
+Caso arbol con un nodo x
+Se eliminan 0 nodos: debe seguir x
+Se eliminan 100 nodos: debe quedar vacio
+Caso nodo x con subarbol izquierdo y
+Primero se elimina un solo nodo: debe quedar x
+Ahora se eliminan los 2 nodos: debe quedar vacio
+Caso nodo x con subarbol derecho y
+Primero se elimina un solo nodo: debe quedar y
+Ahora se eliminan los 2 nodos: debe quedar vacio
+Caso nodo x con subarbol izquierdo 'y' y derecho x
+Primero se elimina un solo nodo: debe quedar x z
+Ahora se eliminan 2 nodos: debe quedar z
+Ahora se eliminan los 3 nodos: debe quedar vacio
+El ejemplo del enunciado
+Caso arbol equilibrado de 100 nodos
+Caso arbol desequilibrado por la izquierda de 100 nodos
+Caso arbol desequilibrado por la derecha de 100 nodos
+
+===========================
+Tests de la funcion ultimos
+===========================
+
+Caso arbol nulo: debe continuar vacio
+Caso arbol con una hoja x
+Ultimos 0 nodos: debe quedar vacio
+Ultimos 100 nodos: debe seguir x
+Caso nodo x con subarbol izquierdo y
+Primero se obtiene el ultimo nodo: debe ser x
+Ahora se obtienen los 2 ultimos nodos: y x
+Caso nodo x con subarbol derecho y
+Primero se obtiene el ultimo nodo: debe ser y
+Ahora se obtienen los 2 ultimos nodos: x y
+Caso nodo x con subarbol izquierdo 'y' y derecho z
+Primero se obtiene el ultimo nodo: debe ser z
+Ahora se obtienen los 2 ultimos nodos: x z
+Ahora se obtienen los 3 ultimos nodos: y x z
+El ejemplo del enunciado
+Caso arbol equilibrado de 100 nodos
+Caso arbol desequilibrado por la izquierda de 100 nodos
+Caso arbol desequilibrado por la derecha de 100 nodos
+Felicitaciones: su solucion es correcta
+No olvide verificar que es eficiente con make test-O
+==1200== 
+==1200== HEAP SUMMARY:
+==1200==     in use at exit: 0 bytes in 0 blocks
+==1200==   total heap usage: 16,142 allocs, 16,142 frees, 391,480 bytes allocated
+==1200== 
+==1200== All heap blocks were freed -- no leaks are possible
+==1200== 
+==1200== For counts of detected and suppressed errors, rerun with: -v
+==1200== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

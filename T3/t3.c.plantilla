@@ -1,0 +1,12 @@
+#include <stdlib.h>
+
+#include "t3.h"
+
+int eliminar_primeros(Nodo **pa, int k) {
+  ...
+}
+
+Nodo *ultimos(Nodo *a, int *pk) {
+  ...
+}
+
