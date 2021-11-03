@@ -1,0 +1,6 @@
+
+-------------------------------------------------------------------
+La salida esta filtrada de modo que aparezca lo mas relevante.
+Una copia de la salida completa queda grabada en el archivo run.log
+-------------------------------------------------------------------
+

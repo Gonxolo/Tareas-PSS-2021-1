@@ -1,0 +1,67 @@
+==== run-O ====
+cc -O  -Wall -pedantic -std=c99    -c -o test-prod.o test-prod.c
+cc -O  -Wall -pedantic -std=c99    -c -o prod.o prod.c
+cc -O  -Wall -pedantic -std=c99    -c -o BigInt.o BigInt.c
+cc   test-prod.o prod.o BigInt.o  -pthread -o test-prod
+./test-prod
+Test: factorial de numeros pequenos con 2 a 17 threads
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+
+Aprobado
+--------------
+Test: speed up
+Intento: 1
+Calculando factorial de 40000 secuencialmente.
+En mi computador Ryzen 3550H se demoro hasta medio minuto.
+Tiempo=420 milisegundos, cifras hexadecimales=138453
+Calculando en paralelo con 4 threads
+En mi computador el speed up rondaba 1.4 con 2 cores
+Llamada secuencial con i=30000 j=39999
+Llamada secuencial con i=10000 j=19999
+Llamada secuencial con i=20000 j=29999
+Llamada secuencial con i=0 j=9999
+Tiempo=273 milisegundos, speed up=1.538462
+Felicitaciones: aprobo este modo de ejecucion
+==== run-g ====
+cc -g  -Wall -pedantic -std=c99    -c -o test-prod.o test-prod.c
+cc -g  -Wall -pedantic -std=c99    -c -o prod.o prod.c
+cc -g  -Wall -pedantic -std=c99    -c -o BigInt.o BigInt.c
+cc -g  test-prod.o prod.o BigInt.o  -pthread -o test-prod
+./test-prod
+Test: factorial de numeros pequenos con 2 a 17 threads
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+
+Aprobado
+--------------
+Test: speed up
+Intento: 1
+Calculando factorial de 40000 secuencialmente.
+En mi computador Ryzen 3550H se demoro hasta medio minuto.
+Tiempo=832 milisegundos, cifras hexadecimales=138453
+Calculando en paralelo con 4 threads
+En mi computador el speed up rondaba 1.4 con 2 cores
+Llamada secuencial con i=30000 j=39999
+Llamada secuencial con i=10000 j=19999
+Llamada secuencial con i=20000 j=29999
+Llamada secuencial con i=0 j=9999
+Tiempo=562 milisegundos, speed up=1.480427
+Felicitaciones: aprobo este modo de ejecucion
+==== zip ====
