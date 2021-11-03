@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+#include "t5.h"
+
+... defina aca la estructura para los parametros que recibira viajante ...
+
+... defina aca la funcion que ejecuta cada thread
+
+double viajante_par(int z[], int n, double **m, int nperm, int p) {
+  ... cree p threads ...
+  ... cada uno invoca viajante con nperm/p permutaciones ...
+  ... elija la mejor solucion encontrada y copiela en z ...
+  return ...;
+}

@@ -1,0 +1,288 @@
+make test-g
+make clean
+make[1]: se entra en el directorio '/home/pss/Win/Tareas/T5'
+rm -f *.o *.log
+rm -f test-t5
+make[1]: se sale del directorio '/home/pss/Win/Tareas/T5'
+make
+make[1]: se entra en el directorio '/home/pss/Win/Tareas/T5'
+cc -g -Wall -pedantic -std=c99   -c -o test-t5.o test-t5.c
+cc -g -Wall -pedantic -std=c99   -c -o t5.o t5.c
+cc -g  test-t5.o t5.o  -lm -lpthread -o test-t5
+make[1]: se sale del directorio '/home/pss/Win/Tareas/T5'
+./test-t5
+Test 1: ejemplo con solo 6 ciudades
+Calculando secuencialmente
+Resultados viajante: nperm=8000000 min=2.175692 primer_rand=1806224600
+0 1 2 4 5 3 0
+Calculando en paralelo
+Resultados viajante: nperm=2000000 min=2.175692 primer_rand=1552004103
+0 1 2 4 5 3 0
+Resultados viajante: nperm=2000000 min=2.175692 primer_rand=3538670325
+0 1 2 4 5 3 0
+Resultados viajante: nperm=2000000 min=2.175692 primer_rand=1175343718
+0 1 2 4 5 3 0
+Resultados viajante: nperm=2000000 min=2.175692 primer_rand=882233098
+0 1 2 4 5 3 0
+Resultado final: nperm=8000000 distancia minima=2.175692
+0 1 2 4 5 3 0
+Test 1 aprobado
+
+--------------------------------------------------
+
+Test 2: Un ejemplo grande con 33 ciudades
+Precalentando secuencialmente
+Resultados viajante: nperm=100000 min=11.905195 primer_rand=3171603433
+0 15 6 23 8 13 14 16 18 1 12 20 31 30 4 29 2 5 32 10 7 24 22 21 3 26 9 25 11 17 27 28 19 0
+Calculando secuencialmente con k= 10000000 permutaciones
+Resultados viajante: nperm=10000000 min=10.553377 primer_rand=2612593740
+0 15 6 9 16 7 13 4 29 18 22 20 19 2 14 12 8 30 10 32 31 3 21 26 25 24 11 23 5 27 28 17 1 0
+
+Resultado secuencial Tiempo=8575 distancia minima=10.553377
+
+-----
+Calculando en paralelo con k= 10000000 permutaciones, intento 1
+Resultados viajante: nperm=1250000 min=10.520605 primer_rand=1875132386
+0 7 2 4 29 8 26 30 31 27 5 24 28 10 32 12 23 11 25 17 1 19 18 16 20 3 22 13 14 6 9 21 15 0
+Resultados viajante: nperm=1250000 min=10.650661 primer_rand=284353194
+0 9 7 8 25 16 13 31 6 22 18 4 15 29 20 21 1 3 26 14 2 28 24 11 23 5 10 32 30 12 27 17 19 0
+Resultados viajante: nperm=1250000 min=10.978105 primer_rand=927797456
+0 5 23 20 32 30 12 31 25 27 10 8 28 24 9 21 11 16 1 22 15 2 29 4 14 6 7 18 19 17 3 26 13 0
+Resultados viajante: nperm=1250000 min=10.800877 primer_rand=921827429
+0 22 21 13 20 2 8 14 15 17 5 31 16 7 18 29 4 26 6 9 28 23 1 3 11 12 32 30 25 27 10 19 24 0
+Resultados viajante: nperm=1250000 min=11.154887 primer_rand=3153907264
+0 6 19 23 31 27 25 12 20 14 32 10 8 28 5 18 3 26 13 9 11 24 17 21 1 16 2 29 4 7 15 22 30 0
+Resultados viajante: nperm=1250000 min=10.798656 primer_rand=1434517468
+0 4 15 26 29 3 21 2 8 12 25 27 7 18 31 5 14 13 20 22 1 24 6 23 28 17 11 32 10 30 19 16 9 0
+Resultados viajante: nperm=1250000 min=10.655077 primer_rand=330672961
+0 26 15 19 5 10 32 18 16 7 8 12 30 21 9 23 28 14 3 17 24 13 20 2 29 4 11 25 27 31 22 1 6 0
+Resultados viajante: nperm=1250000 min=10.899571 primer_rand=620072809
+0 27 5 14 2 4 13 1 9 6 17 25 19 11 24 23 31 32 10 29 12 30 21 15 28 8 7 22 26 20 3 18 16 0
+
+Resultado paralelo: Tiempo=4482 speedup=1.913208 distancia minima=10.520605
+0 7 2 4 29 8 26 30 31 27 5 24 28 10 32 12 23 11 25 17 1 19 18 16 20 3 22 13 14 6 9 21 15 0
+Test 2 aprobado: speedup >= 1.7x
+
+Felicitaciones: su tarea funciona
+
+
+=====================================================================================================================
+
+
+make test-O
+make clean
+make[1]: se entra en el directorio '/home/pss/Win/Tareas/T5'
+rm -f *.o *.log
+rm -f test-t5
+make[1]: se sale del directorio '/home/pss/Win/Tareas/T5'
+make "CFLAGS= -O -Wall -pedantic -std=c99" LDFLAGS=
+make[1]: se entra en el directorio '/home/pss/Win/Tareas/T5'
+cc -O -Wall -pedantic -std=c99   -c -o test-t5.o test-t5.c
+cc -O -Wall -pedantic -std=c99   -c -o t5.o t5.c
+cc   test-t5.o t5.o  -lm -lpthread -o test-t5
+make[1]: se sale del directorio '/home/pss/Win/Tareas/T5'
+./test-t5
+Test 1: ejemplo con solo 6 ciudades
+Calculando secuencialmente
+Resultados viajante: nperm=8000000 min=2.175692 primer_rand=1806224600
+0 1 2 4 5 3 0
+Calculando en paralelo
+Resultados viajante: nperm=2000000 min=2.175692 primer_rand=882233098
+0 1 2 4 5 3 0
+Resultados viajante: nperm=2000000 min=2.175692 primer_rand=1175343718
+0 1 2 4 5 3 0
+Resultados viajante: nperm=2000000 min=2.175692 primer_rand=3538670325
+0 1 2 4 5 3 0
+Resultados viajante: nperm=2000000 min=2.175692 primer_rand=1552004103
+0 1 2 4 5 3 0
+Resultado final: nperm=8000000 distancia minima=2.175692
+0 1 2 4 5 3 0
+Test 1 aprobado
+
+--------------------------------------------------
+
+Test 2: Un ejemplo grande con 33 ciudades
+Precalentando secuencialmente
+Resultados viajante: nperm=100000 min=11.905195 primer_rand=3171603433
+0 15 6 23 8 13 14 16 18 1 12 20 31 30 4 29 2 5 32 10 7 24 22 21 3 26 9 25 11 17 27 28 19 0
+Calculando secuencialmente con k= 10000000 permutaciones
+Resultados viajante: nperm=10000000 min=10.553377 primer_rand=2612593740
+0 15 6 9 16 7 13 4 29 18 22 20 19 2 14 12 8 30 10 32 31 3 21 26 25 24 11 23 5 27 28 17 1 0
+
+Resultado secuencial Tiempo=3013 distancia minima=10.553377
+
+-----
+Calculando en paralelo con k= 10000000 permutaciones, intento 1
+Resultados viajante: nperm=1250000 min=10.655077 primer_rand=330672961
+0 26 15 19 5 10 32 18 16 7 8 12 30 21 9 23 28 14 3 17 24 13 20 2 29 4 11 25 27 31 22 1 6 0
+Resultados viajante: nperm=1250000 min=10.520605 primer_rand=1875132386
+0 7 2 4 29 8 26 30 31 27 5 24 28 10 32 12 23 11 25 17 1 19 18 16 20 3 22 13 14 6 9 21 15 0
+Resultados viajante: nperm=1250000 min=10.798656 primer_rand=1434517468
+0 4 15 26 29 3 21 2 8 12 25 27 7 18 31 5 14 13 20 22 1 24 6 23 28 17 11 32 10 30 19 16 9 0
+Resultados viajante: nperm=1250000 min=11.154887 primer_rand=3153907264
+0 6 19 23 31 27 25 12 20 14 32 10 8 28 5 18 3 26 13 9 11 24 17 21 1 16 2 29 4 7 15 22 30 0
+Resultados viajante: nperm=1250000 min=10.978105 primer_rand=927797456
+0 5 23 20 32 30 12 31 25 27 10 8 28 24 9 21 11 16 1 22 15 2 29 4 14 6 7 18 19 17 3 26 13 0
+Resultados viajante: nperm=1250000 min=10.800877 primer_rand=921827429
+0 22 21 13 20 2 8 14 15 17 5 31 16 7 18 29 4 26 6 9 28 23 1 3 11 12 32 30 25 27 10 19 24 0
+Resultados viajante: nperm=1250000 min=10.650661 primer_rand=284353194
+0 9 7 8 25 16 13 31 6 22 18 4 15 29 20 21 1 3 26 14 2 28 24 11 23 5 10 32 30 12 27 17 19 0
+Resultados viajante: nperm=1250000 min=10.899571 primer_rand=620072809
+0 27 5 14 2 4 13 1 9 6 17 25 19 11 24 23 31 32 10 29 12 30 21 15 28 8 7 22 26 20 3 18 16 0
+
+Resultado paralelo: Tiempo=1645 speedup=1.831611 distancia minima=10.520605
+0 7 2 4 29 8 26 30 31 27 5 24 28 10 32 12 23 11 25 17 1 19 18 16 20 3 22 13 14 6 9 21 15 0
+Test 2 aprobado: speedup >= 1.7x
+
+Felicitaciones: su tarea funciona
+
+
+===============================================================================================================
+
+
+make test-valgrind
+make clean
+make[1]: se entra en el directorio '/home/pss/Win/Tareas/T5'
+rm -f *.o *.log
+rm -f test-t5
+make[1]: se sale del directorio '/home/pss/Win/Tareas/T5'
+make "CFLAGS=-g -Wall -pedantic -std=c99 -DVALGRIND"
+make[1]: se entra en el directorio '/home/pss/Win/Tareas/T5'
+cc -g -Wall -pedantic -std=c99 -DVALGRIND   -c -o test-t5.o test-t5.c
+cc -g -Wall -pedantic -std=c99 -DVALGRIND   -c -o t5.o t5.c
+cc -g  test-t5.o t5.o  -lm -lpthread -o test-t5
+make[1]: se sale del directorio '/home/pss/Win/Tareas/T5'
+valgrind ./test-t5
+==1537== Memcheck, a memory error detector
+==1537== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1537== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==1537== Command: ./test-t5
+==1537== 
+Test 1: ejemplo con solo 6 ciudades
+Calculando secuencialmente
+Resultados viajante: nperm=800000 min=2.175692 primer_rand=1806224600
+0 1 2 4 5 3 0
+Calculando en paralelo
+Resultados viajante: nperm=200000 min=2.175692 primer_rand=1552004103
+0 1 2 4 5 3 0
+Resultados viajante: nperm=200000 min=2.175692 primer_rand=3538670325
+0 1 2 4 5 3 0
+Resultados viajante: nperm=200000 min=2.175692 primer_rand=1175343718
+0 1 2 4 5 3 0
+Resultados viajante: nperm=200000 min=2.175692 primer_rand=882233098
+0 1 2 4 5 3 0
+Resultado final: nperm=800000 distancia minima=2.175692
+0 1 2 4 5 3 0
+Test 1 aprobado
+
+--------------------------------------------------
+
+Test 2: Un ejemplo grande con 33 ciudades
+Precalentando secuencialmente
+Resultados viajante: nperm=10000 min=12.024182 primer_rand=3171603433
+0 29 3 24 5 19 13 12 2 18 7 26 21 22 6 10 32 30 8 20 15 4 14 1 9 25 27 16 11 31 23 28 17 0
+Calculando secuencialmente con k= 1000000 permutaciones
+Resultados viajante: nperm=1000000 min=10.553377 primer_rand=2612593740
+0 15 6 9 16 7 13 4 29 18 22 20 19 2 14 12 8 30 10 32 31 3 21 26 25 24 11 23 5 27 28 17 1 0
+
+Resultado secuencial Tiempo=39799 distancia minima=10.553377
+
+-----
+Calculando en paralelo con k= 1000000 permutaciones, intento 1
+Resultados viajante: nperm=125000 min=11.755183 primer_rand=1875132386
+0 31 19 24 11 28 10 32 12 16 27 7 29 25 6 9 23 5 3 4 30 8 21 18 13 15 2 20 14 26 22 17 1 0
+Resultados viajante: nperm=125000 min=11.520278 primer_rand=330672961
+0 11 5 24 9 17 21 29 4 15 16 13 3 22 18 23 28 1 6 19 20 2 27 8 31 14 30 12 10 32 25 7 26 0
+Resultados viajante: nperm=125000 min=10.978105 primer_rand=927797456
+0 5 23 20 32 30 12 31 25 27 10 8 28 24 9 21 11 16 1 22 15 2 29 4 14 6 7 18 19 17 3 26 13 0
+Resultados viajante: nperm=125000 min=10.996494 primer_rand=921827429
+0 8 23 5 25 15 26 4 29 2 32 10 30 27 20 21 3 13 16 11 28 17 14 22 9 6 19 24 7 18 1 12 31 0
+Resultados viajante: nperm=125000 min=11.514693 primer_rand=3153907264
+0 27 7 25 11 3 21 13 26 20 15 30 31 32 10 2 4 14 29 19 18 6 17 24 8 12 28 16 23 5 1 9 22 0
+Resultados viajante: nperm=125000 min=10.650661 primer_rand=284353194
+0 9 7 8 25 16 13 31 6 22 18 4 15 29 20 21 1 3 26 14 2 28 24 11 23 5 10 32 30 12 27 17 19 0
+Resultados viajante: nperm=125000 min=11.937170 primer_rand=620072809
+0 9 15 16 13 26 8 31 12 10 32 18 30 28 20 29 1 24 7 6 14 21 11 27 25 17 5 19 23 2 4 3 22 0
+Resultados viajante: nperm=125000 min=11.597700 primer_rand=1434517468
+0 29 4 22 18 7 10 30 24 2 14 17 25 31 12 28 23 6 1 20 13 32 8 16 21 15 26 3 9 27 5 19 11 0
+
+Resultado paralelo: Tiempo=39900 speedup=0.997469 distancia minima=10.650661
+0 9 7 8 25 16 13 31 6 22 18 4 15 29 20 21 1 3 26 14 2 28 24 11 23 5 10 32 30 12 27 17 19 0
+
+-----
+Calculando en paralelo con k= 1000000 permutaciones, intento 2
+Resultados viajante: nperm=125000 min=11.205263 primer_rand=3434991786
+0 2 29 12 17 11 3 16 18 20 14 22 4 26 7 31 23 25 19 24 9 1 28 27 15 8 30 32 10 5 6 21 13 0
+Resultados viajante: nperm=125000 min=10.788661 primer_rand=1425978126
+0 9 28 5 24 31 18 8 12 30 20 13 14 25 17 6 15 7 16 19 11 21 27 23 10 32 4 2 29 1 3 26 22 0
+Resultados viajante: nperm=125000 min=11.483405 primer_rand=1628711972
+0 20 15 7 29 8 30 27 10 32 31 2 12 17 13 21 14 4 11 28 23 19 25 3 22 6 9 1 18 5 24 26 16 0
+Resultados viajante: nperm=125000 min=11.529320 primer_rand=251202513
+0 15 13 21 19 5 28 23 14 22 7 30 8 10 24 11 27 31 2 18 17 25 6 26 12 32 29 4 20 16 1 3 9 0
+Resultados viajante: nperm=125000 min=11.357437 primer_rand=2794721865
+0 22 21 6 24 19 1 32 12 30 31 23 28 11 10 16 25 27 13 26 18 8 20 14 17 5 9 3 4 2 29 15 7 0
+Resultados viajante: nperm=125000 min=11.770354 primer_rand=2564972051
+0 17 11 19 28 9 24 16 13 30 29 2 4 32 12 10 3 20 14 21 26 8 18 7 31 15 6 1 22 25 23 27 5 0
+Resultados viajante: nperm=125000 min=11.900304 primer_rand=3556967346
+0 11 28 10 32 25 6 5 23 9 24 27 17 3 20 29 15 4 26 1 18 21 13 22 30 12 19 7 31 8 14 2 16 0
+Resultados viajante: nperm=125000 min=11.685778 primer_rand=434459478
+0 1 9 5 19 24 12 17 16 15 13 20 4 2 29 18 8 7 27 6 23 28 10 26 3 32 31 11 22 21 14 30 25 0
+
+Resultado paralelo: Tiempo=39745 speedup=1.001359 distancia minima=10.788661
+0 9 28 5 24 31 18 8 12 30 20 13 14 25 17 6 15 7 16 19 11 21 27 23 10 32 4 2 29 1 3 26 22 0
+
+-----
+Calculando en paralelo con k= 1000000 permutaciones, intento 3
+Resultados viajante: nperm=125000 min=11.720038 primer_rand=1529846581
+0 6 26 23 11 22 28 12 25 9 1 15 3 4 2 14 20 13 21 5 19 17 30 8 10 32 29 16 18 7 24 31 27 0
+Resultados viajante: nperm=125000 min=10.820518 primer_rand=560510433
+0 19 25 5 27 31 28 10 12 3 15 4 22 18 13 26 29 2 14 16 7 1 9 17 24 11 23 6 32 8 30 20 21 0
+Resultados viajante: nperm=125000 min=11.676921 primer_rand=556933618
+0 12 7 16 20 21 15 23 19 5 28 14 13 17 26 3 18 24 10 32 31 30 27 25 11 8 29 2 22 4 9 6 1 0
+Resultados viajante: nperm=125000 min=11.482931 primer_rand=3415909828
+0 3 4 29 24 30 31 10 32 9 18 23 28 19 1 21 13 16 22 15 20 2 26 7 11 17 25 27 8 5 12 14 6 0
+Resultados viajante: nperm=125000 min=11.254859 primer_rand=3883467351
+0 17 10 31 24 18 26 30 12 32 5 23 8 14 16 27 7 22 3 11 28 25 19 1 6 9 21 13 2 29 4 20 15 0
+Resultados viajante: nperm=125000 min=11.256995 primer_rand=1192510065
+0 28 5 27 24 22 26 1 29 2 7 11 9 21 20 13 15 30 8 12 25 17 6 3 4 14 10 32 31 23 18 19 16 0
+Resultados viajante: nperm=125000 min=11.381563 primer_rand=1863804843
+0 6 2 4 29 18 24 21 16 13 23 11 9 8 26 14 20 32 30 27 10 31 12 7 15 3 22 17 28 5 25 19 1 0
+Resultados viajante: nperm=125000 min=11.356831 primer_rand=681691353
+0 24 5 10 28 11 27 1 6 9 17 23 25 20 3 14 30 31 8 7 19 32 12 16 26 2 4 29 22 13 15 18 21 0
+
+Resultado paralelo: Tiempo=39607 speedup=1.004848 distancia minima=10.820518
+0 19 25 5 27 31 28 10 12 3 15 4 22 18 13 26 29 2 14 16 7 1 9 17 24 11 23 6 32 8 30 20 21 0
+
+-----
+Calculando en paralelo con k= 1000000 permutaciones, intento 4
+Resultados viajante: nperm=125000 min=11.713927 primer_rand=1688254577
+0 6 24 25 32 10 12 19 17 30 8 26 15 11 18 31 27 28 9 1 21 4 14 7 22 20 29 16 3 13 2 5 23 0
+Resultados viajante: nperm=125000 min=11.497274 primer_rand=760094684
+0 26 22 15 29 2 28 5 1 17 24 25 7 19 11 23 9 14 21 3 6 18 4 20 30 8 31 10 32 27 13 12 16 0
+Resultados viajante: nperm=125000 min=10.908271 primer_rand=1100356290
+0 21 31 20 13 29 2 14 22 3 1 8 12 32 19 11 16 27 10 30 26 15 4 18 25 6 9 17 7 24 23 28 5 0
+Resultados viajante: nperm=125000 min=11.243966 primer_rand=3407069547
+0 13 25 23 27 5 10 8 32 30 12 7 16 14 3 20 9 22 21 31 6 17 4 26 15 29 2 18 1 24 19 11 28 0
+Resultados viajante: nperm=125000 min=12.104305 primer_rand=1567159357
+0 1 28 5 23 27 6 29 22 13 21 15 14 4 16 25 19 8 20 7 31 24 17 18 3 2 26 9 11 12 32 10 30 0
+Resultados viajante: nperm=125000 min=11.221315 primer_rand=2223348324
+0 9 7 27 11 31 30 4 26 6 14 2 29 20 3 15 13 8 17 10 32 25 5 24 1 22 21 18 16 28 19 12 23 0
+Resultados viajante: nperm=125000 min=10.073782 primer_rand=3249170475
+0 19 24 11 28 13 7 22 3 18 26 15 20 4 29 2 16 10 32 12 1 6 17 21 14 30 31 8 5 25 27 23 9 0
+Resultados viajante: nperm=125000 min=11.343949 primer_rand=3506173920
+0 20 21 4 10 32 30 12 8 19 11 1 22 15 3 13 25 17 24 5 27 6 9 29 16 26 31 2 14 18 7 28 23 0
+
+Resultado paralelo: Tiempo=39738 speedup=1.001535 distancia minima=10.073782
+0 19 24 11 28 13 7 22 3 18 26 15 20 4 29 2 16 10 32 12 1 6 17 21 14 30 31 8 5 25 27 23 9 0
+Despues de 4 intentos no obtuvo un speedup de 1.7x
+Si ejecuto con make test-O revise la paralelizacion.
+==1537== 
+==1537== HEAP SUMMARY:
+==1537==     in use at exit: 0 bytes in 0 blocks
+==1537==   total heap usage: 98 allocs, 98 frees, 24,416 bytes allocated
+==1537== 
+==1537== All heap blocks were freed -- no leaks are possible
+==1537== 
+==1537== For counts of detected and suppressed errors, rerun with: -v
+==1537== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+make: *** [Makefile:34: test-valgrind] Error 1
