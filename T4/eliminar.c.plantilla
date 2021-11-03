@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+
+// errno.h se necesita para poder usar la variable errno
+
+int main(int argc, char *argv[]) {
+  if (argc!=3) {
+    fprintf(stderr, ...);
+    ...
+  }
+  ...
+  FILE *f= fopen(...);
+  if (f==NULL) {
+    ... la variable errno contiene el entero que describe el error ...
+  }
+  ...
+  fclose(f); // Si no cierra el archivo, valgrind reportara fugas
+  return 0;
+}

@@ -1,0 +1,11 @@
+alimento  sustancia ingerida por un ser vivo                                   
+bolsillo  bolsa pequena, con una abertura fija, anadido a una prenda de vestir 
+casa      edificacion construida para ser habitada                             
+calcetinesprenda para el pie, para calentarlo y protegerlo del calzado         
+celular   aparato portatil de un sistema de telefonia celular                  
+lluvia    condensacion del vapor de agua contenida en las nubes                
+nadar     trasladarse en el agua, ayudandose de los brazos y sin tocar el suelo
+perro     mamifero domestico que tiene olfato muy fino, es inteligente y leal  
+posada    establecimiento economico de hospedaje destinado a albergar viajeros 
+taladro   herramienta aguda o cortante con que se agujerea la madera           
+                                                                               
