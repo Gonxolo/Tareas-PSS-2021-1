@@ -1,0 +1,5 @@
+
+---------------------------------------------
+Una copia de la salida queda grabada en el archivo run.log
+---------------------------------------------
+

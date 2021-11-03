@@ -1,0 +1,13 @@
+
+---------------------------------------------
+En ddd
+  ingrese: target remote | vgdb --pid=<pid>
+  <pid> es el numero pid que aparece como:
+  ==pid== ...
+  defina los breakpoints que necesite
+  ingrese cont
+
+Si ddd no responde, mate el proceso en un terminal
+con el comando: kill -9 <pid>
+---------------------------------------------
+

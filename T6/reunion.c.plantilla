@@ -1,0 +1,13 @@
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#include "reunion.h"
+
+struct reunion {
+  ... // declare aca un mutex y una condicion y los contadores que
+      // Ud. necesitara para resolver el problema de sincronizacion
+};
+
+...
